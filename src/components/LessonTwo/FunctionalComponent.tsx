@@ -4,4 +4,4 @@ function FunctionalComponent() {
         <h1 className="be-red">{title}</h1>
     );
 }
-export default FunctionalComponent
+export default FunctionalComponent;
