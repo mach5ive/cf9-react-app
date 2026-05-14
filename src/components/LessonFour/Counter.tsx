@@ -3,6 +3,15 @@ import CounterButton from "./CounterButton.tsx";
 
 const Counter =() => {
     const[counter, setCounter] = useState(0);
+    // const [lastAction, setLastAction] = useState("Increase");
+    // const [time, setTime] = useState("");
+    //
+    // const [state, setState] = useState({
+    //     count: 0,
+    //     lastAction: "",
+    //     time:""
+    // })
+
     const increaseCount = () => {
         setCounter(counter + 1);
     }
