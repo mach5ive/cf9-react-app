@@ -4,6 +4,8 @@
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
+import Counter from "./components/LessonFour/Counter.tsx";
+// import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
   //   type PropsA = {
   //       title: string;
@@ -65,12 +67,15 @@ function App() {
       {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolor facilis fugit necessitatibus, nulla provident suscipit voluptatem voluptates voluptatum."*/}
       {/*/>*/}
 
-      <Layout addClasses="text-blue-600 bg-gray-100">
+      {/*  LESSON FOUR*/}
+      <Layout addClasses="bg-gray-50">
           {/*<ArrowFunctionalComponentWithProps*/}
           {/*    title="Second Title"*/}
           {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolor facilis fugit necessitatibus, nulla provident suscipit voluptatem voluptates voluptatum."*/}
           {/*/>*/}
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque commodi cupiditate dolorem doloremque dolorum eius harum ipsa libero maxime minima molestiae odio odit officiis placeat porro possimus quasi quis quisquam quo quos, rem repellendus sapiente veritatis voluptatem. Asperiores autem distinctio dolorum eaque? Ad aliquid architecto corporis distinctio earum expedita iure laudantium non qui quibusdam reiciendis, rem repellendus repudiandae sed sequi soluta unde. Animi consectetur consequuntur cupiditate delectus deleniti distinctio doloremque dolores eius eveniet ex facilis fuga fugiat fugit in laudantium magnam natus nesciunt non nostrum praesentium quaerat quod, rem repellendus tempore velit voluptas voluptates. A deleniti dolores illum nam!</p>
+          <Counter/>
+          {/*<ClassCounter />*/}
+
       </Layout>
     </>
   )
