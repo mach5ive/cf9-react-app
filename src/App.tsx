@@ -5,7 +5,8 @@
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
-import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+// import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+import NameChanger from "./components/LessonFive/NameChanger.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
@@ -70,16 +71,19 @@ function App() {
       {/*/>*/}
 
       {/*  LESSON FOUR*/}
-      <Layout addClasses="bg-gray-50">
-          {/*<ArrowFunctionalComponentWithProps*/}
-          {/*    title="Second Title"*/}
-          {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolor facilis fugit necessitatibus, nulla provident suscipit voluptatem voluptates voluptatum."*/}
-          {/*/>*/}
-          {/*<Counter/>*/}
-          {/*<ClassCounter />*/}
-          <CounterAdvanced/>
+      {/*<Layout addClasses="bg-gray-50">*/}
+      {/*    /!*<ArrowFunctionalComponentWithProps*!/*/}
+      {/*    /!*    title="Second Title"*!/*/}
+      {/*    /!*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolor facilis fugit necessitatibus, nulla provident suscipit voluptatem voluptates voluptatum."*!/*/}
+      {/*    /!*//*/}
+      {/*    /!*<Counter/>*!/*/}
+      {/*    /!*<ClassCounter />*!/*/}
+      {/*    <CounterAdvanced/>*/}
 
-      </Layout>
+      {/*</Layout>*/}
+        <Layout addClasses="bd-gray-50">
+            <NameChanger/>
+        </Layout>
     </>
   )
 }
