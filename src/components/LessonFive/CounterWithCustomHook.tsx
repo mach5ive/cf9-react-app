@@ -1,9 +1,10 @@
 import CounterButton from "../LessonFour/CounterButton.tsx";
-import {useCounter} from "../../hooks/useCounter.ts";
+import {useCounter} from "../../hooks/useCounter.ts"
 
 const CounterWithCustomHook = () => {
 
-    const {count, lastAction, time, increase, reset, decrease} = useCounter();
+    const { count, lastAction, time, increase, decrease, reset } = useCounter();
+
 
     return (
         <>
@@ -26,15 +27,15 @@ const CounterWithCustomHook = () => {
                     disabled={count === 0}
                 />
             </div>
-
             {
-            lastAction && (
-            <p className="text-center pt-3">
-                Last change: <strong>{lastAction || "-"}</strong> at {" "}
-                <strong>{time || "-"}</strong></p>
-            )
+                lastAction && (
+                    <p className="text-center pt-8">
+                        Last Change: <strong>{lastAction }</strong> at{" "}
+                        <strong>{time}</strong>
+                    </p>
+                )
             }
         </>
     )
 }
-export default CounterWithCustomHook();
+export default CounterWithCustomHook;
