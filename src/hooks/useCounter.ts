@@ -1,12 +1,14 @@
 import {useState} from "react";
+import type {CounterState} from "../types.ts";
 
 const initialState = {
     count: 0,
     lastAction: "",
     time: ""
 }
+
 export const useCounter = () => {
-    const [state, setState] = useState(initialState)
+    const [state, setState] = useState<CounterState>(initialState)
 
     const getCurrentTime = () => new Date().toLocaleTimeString();
 
