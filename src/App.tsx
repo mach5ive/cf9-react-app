@@ -4,10 +4,11 @@
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 // import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 import Layout from "./components/Layout.tsx";
+import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import NameChanger from "./components/LessonFive/NameChanger.tsx";
-import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
+// import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
@@ -51,6 +52,14 @@ import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook
   //
   // //   PropsThree = {title, description, price, sort, image}
 
+// function setup() {
+//     alert("count")
+// }
+//
+// useEffect(setup, [count])
+
+
+
 function App() {
 
   return (
@@ -85,7 +94,8 @@ function App() {
       {/*  LESSON FIVE*/}
         <Layout addClasses="bd-gray-50">
             {/*<NameChanger/>*/}
-            <CounterWithCustomHook/>
+            {/*<CounterWithCustomHook/>*/}
+            <NameChangerWithTitle />
         </Layout>
     </>
   )
